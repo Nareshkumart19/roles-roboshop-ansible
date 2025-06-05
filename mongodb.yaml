@@ -1,4 +1,4 @@
-- name: configule mongodb component
+- name: configure mongodb component
   becom: yes
   hosts: mongodb
   roles:  # this will automatically load a folder called in current working direcory 
