@@ -2,4 +2,4 @@
   become: yes
   hosts: "{{ component}}"
   roles:  # this will automatically load a folder called in current working direcory 
-  - "{{ component}}"
+  - "{{ component }}"
