@@ -36,14 +36,14 @@
     - name: remove default nginx conf
       ansible.builtin.file:
         path: /etc/nginx/nginx.conf
-        state: absents
+        state: absent
 
     - name: copy service file
       ansible.builtin.template:
-        src: ngnix.conf.j2
+        src: ngnix.conf
         dest: /etc/nginx/nginx.conf
 
-    - name: Restart nginx
+    - name: restart nginx
       ansible.builtin.service:
         name: nginx
         state: restarted
