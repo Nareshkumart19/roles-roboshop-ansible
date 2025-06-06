@@ -39,7 +39,7 @@
         state: absent
 
     - name: copy service file
-      ansible.builtin.templates:
+      ansible.builtin.template:
         src: ngnix.conf
         dest: /etc/nginx/nginx.conf
 
